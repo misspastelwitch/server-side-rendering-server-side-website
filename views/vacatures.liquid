@@ -1,0 +1,50 @@
+{% render 'partials/head.liquid', title: 'Vacatures' %}
+
+    <h1>Onze Vacatures</h1> 
+
+<form>
+    <label for="search">Zoek een vacature...</label>
+    <input type="text" id="search" name="search" placeholder="Zoek een vacature...">
+    <select>
+        <option value="all">Expertise</option>
+        <option value="frontend">Frontend Developer</option>
+        <option value="backend">Backend Developer</option>
+        <option value="fullstack">Fullstack Developer</option>
+        <option value="designer">Designer</option>
+        <option value="marketeer">Marketeer</option>
+    </select>
+    <select>
+        <option value="all">Soort</option>
+        <option value="op">Tijd oplopend</option>
+        <option value="af">Tijd aflopend</option>
+
+    </select>
+    <select>
+        <option value="all">Locatie</option>
+        <option value="ams">Amsterdam</option>
+        <option value="dh">Den Haag</option>
+        <option value="ut">Utrecht</option>
+        <option value="bre">Breda</option>
+        <option value="hfd">Hooftdorp</option>
+    </select>
+    <select>
+        <option value="all">Taal</option>
+        <option value="En">Engels</option>
+        <option value="Nl">Nederlands</option>
+    </select>
+</form>
+
+<main>
+    <ul>
+        {% for vacature in vacatures %}
+        <li>
+         <h2>{{vacature.title}}</h2>
+            <p><span>ENG & NL</span><span>VALSPLAT</span><span>{{vacature.hours}}</span><span>{{vacature.locatie}}</span></p>
+            <a href="{{vacature.url}}">Bekijken →</a>
+        </li>
+        {% endfor %}
+    </ul>
+</main>
+
+</script>
+{% render 'partials/foot.liquid' %}

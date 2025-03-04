@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Martian+Mono:wght@100..800&display=swap');
+
+body 
+{
+
+/* colour scheme */
+
+--black: #222226;
+--grey: #666666;
+--white: #FFFFFF;
+--blue: #364BF7;
+
+/* Fonts */
+
+--font-family-regular: 'Archivo', sans-serif;
+--font-family-mono: 'MartianMono', sans-serif;
+
+/* Font heights */
+--font-size-s: 14px;
+--font-size-m: 16px;
+--font-size-l: 18px;
+
+/* Line heights */
+--line-height-s: 1.5;
+--line-height-m: 1.6;
+--line-height-l: 1.7;
+
+/* Font Weights */
+--font-weight-heading: SemiBold;
+--font-weight-body: Regular;
+    
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;}
