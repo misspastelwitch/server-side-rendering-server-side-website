@@ -23,8 +23,35 @@ body
 --font-family-regular: 'Archivo', sans-serif;
 --font-family-mono: 'MartianMono', sans-serif;
 
+
+@font-face {
+  font-family: Archivo;
+  font-display: swap;
+  src: url(/fonts/Archivo-Regular.woff2) format("woff2"),url(/fonts/Archivo-Regular.woff) format("woff")
+}
+
+@font-face {
+  font-family: Archivo;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/Archivo-SemiBold.woff2) format("woff2"),url(/fonts/Archivo-SemiBold.woff) format("woff")
+}
+
+@font-face {
+  font-family: MartianMono;
+  font-display: swap;
+  src: url(/fonts/MartianMono-Regular.woff2) format("woff2"),url(/fonts/MartianMono-Regular.woff) format("woff")
+}
+
+@font-face {
+  font-family: MartianMono;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/MartianMono-Light.woff2) format("woff2"),url(/fonts/MartianMono-Light.woff) format("woff")
+}
+
 /* Font heights */
---letter-spacing: -0.04em; /* -4% van de font size */
+--letter-spacing: -0.04em;
 
 --font-size-xs: 0.5rem;
 --font-size-sm: 1rem;
@@ -58,83 +85,53 @@ font-size: 16px;
 /* BIG BOY SIZES*/
 h1,
 .xxxl {
-  font-size: clamp(2.5rem, 6vw, var(--size-xxl));
-  font-weight: 600;
-  letter-spacing: var(--letter-spacing);
-  line-height: clamp(1em, 5vw, var(--size-xxl));
+  font-size: 3rem;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: -.04em
   text-transform: uppercase;
 }
 
 h2,
 .xxl {
-  font-size: clamp(2.5rem, 5vw, var(--size-xl));
-  font-weight: 600; 
-  letter-spacing: var(--letter-spacing);
-  line-height: 2.5rem;
+  font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -.04em;
 }
 
 /* MEDIUM SIZES*/
 h3,
 .xl {
-  font-size: clamp(var(--size-md), 4vw, 3rem);
-  font-weight: 400; 
-  letter-spacing: var(--letter-spacing);
-  line-height: clamp(1.5rem, 3.5vw, 1em);
+  font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -.04em;
   text-transform: uppercase;
 }
 
 h4,
 .lg {
-  font-size: clamp(1.5rem, 3.5vw, var(--size-md));
-  letter-spacing: 0;
-  font-weight: 400;
-  line-height: clamp(var(--size-md), 3vw, 2.5rem);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600
 }
 
 /* MINI SIZES*/
 
 h5,
-h6,
-.md {
-  font-size: clamp(1.125rem, 2vw, 1.5rem);
+.m {
+  font-size: 1.125rem;
   font-weight: 600;
-  letter-spacing: 0;
-  line-height: clamp(var(--size-md), 2vw, 2.5rem);
+  line-height: 2rem
 }
 
-/* light version */
 h6,
-.light {
+s {
+  font-size: 1.5rem;
   font-weight: 400;
+  line-height: 2rem
 }
 
-p,
-.sm {
-  font-size: clamp(var(--size-sm), 2.5vw, 1.125rem);
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: clamp(1.5rem, 2.5vw, var(--size-md));
-}
 
-.label {
-    color: #FFFFFF;
-  }
-
-  .zoek {
-  font-size: var(--size-sm);
-  font-family: var(--secondary-font);
-  font-weight: 300;
-  letter-spacing: -0.06em;
-  border: 1px solid var(--black);
-  text-transform: uppercase;
-  padding: 0 4px;
-  }
-
-.button {
-    border: var(--border);
-    background-color: var(--white);
-    font-family: var(--font-family-mono);
-    width: fit-content;
-    color: black;
-    padding: .75rem;
-}
+/*End typography */

@@ -1,21 +1,25 @@
 {% render 'partials/head.liquid', title: 'Vacatures' %}
 
 <header>
-    <img src="assets/DDAlogo.png" alt="logo" class="logo">
-    <nav>
-        <ul>
-            <li><a href="vacatures.liquid">VACATURES</a></li>
-            <li><a href="https://dutchdigitalagencies.com/">HOME</a></li>
-        </ul>
-    </nav>
-</header>
+    <nav class="topnav">
+      <img src="//assets/DDAlogo.png" alt="logo" class="logo">
 
-<section class="title">
-    <h1>Onze Vacatures</h1> 
-</section>
+       <div class="home">
+        <a href="https://dutchdigitalagencies.com/">Home</a>
+
+
+    </nav>
+  </header>
+
+  <header class="titles">
+    <h1>ONZE VACATURES</h1>
+    <p>Verslim je carrière bij de beste digitale bureaus van Nederland.
+     Pak je rol als developer of designer, researcher, als scrum master of marketeer,
+     als strateeg. Start of groei door – en laat zien wat je kan.</p>
+  </header>
+
 
 <form>
-    <label class="label" for="search">Vacatures</label>
     <input type="text" class="zoek" id="search" name="search" placeholder="Zoek een vacature...">
     <select class="button">
         <option value="all">Expertise</option>
