@@ -6,7 +6,7 @@ import express from 'express'
 import { Liquid } from 'liquidjs';
 
 
-console.log('Hieronder moet je waarschijnlijk nog wat veranderen')
+console.log('Welcome back, Stella! ^^')
 // Doe een fetch naar de data die je nodig hebt
 // const apiResponse = await fetch('...')
 
@@ -38,7 +38,7 @@ app.set('views', './views')
 app.get('/', async function (request, response) {
    // Render index.liquid uit de Views map
    // Geef hier eventueel data aan mee
-   response.render('vacatures.liquid'), {vacatures: vacaturesResponseJSON.data})
+   response.render('vacatures.liquid'), {vacatures: vacaturesResponseJSON.data}
 })
 
 // Maak een POST route voor de index; hiermee kun je bijvoorbeeld formulieren afvangen

@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Martian+Mono:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Martian+Mono:wght@100..800&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body 
 {
 
@@ -17,9 +24,15 @@ body
 --font-family-mono: 'MartianMono', sans-serif;
 
 /* Font heights */
---font-size-s: 14px;
---font-size-m: 16px;
---font-size-l: 18px;
+--letter-spacing: -0.04em; /* -4% van de font size */
+
+--font-size-xs: 0.5rem;
+--font-size-sm: 1rem;
+--font-size-md: 2rem;
+--font-size-lg: 3rem;
+--font-size-xl: 4rem;
+--font-size-xxl: 6rem;
+
 
 /* Line heights */
 --line-height-s: 1.5;
@@ -30,5 +43,98 @@ body
 --font-weight-heading: SemiBold;
 --font-weight-body: Regular;
     
-    font-family: 'Archivo', sans-serif;
-    font-size: 16px;}
+font-family: 'Archivo', sans-serif;
+font-size: 16px;}
+
+--border: 1px solid black;
+
+background-color: var(--white);
+font-family: var(--primary-font);
+font-size: 16px;
+
+
+/* Typography */
+
+/* BIG BOY SIZES*/
+h1,
+.xxxl {
+  font-size: clamp(2.5rem, 6vw, var(--size-xxl));
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing);
+  line-height: clamp(1em, 5vw, var(--size-xxl));
+  text-transform: uppercase;
+}
+
+h2,
+.xxl {
+  font-size: clamp(2.5rem, 5vw, var(--size-xl));
+  font-weight: 600; 
+  letter-spacing: var(--letter-spacing);
+  line-height: 2.5rem;
+}
+
+/* MEDIUM SIZES*/
+h3,
+.xl {
+  font-size: clamp(var(--size-md), 4vw, 3rem);
+  font-weight: 400; 
+  letter-spacing: var(--letter-spacing);
+  line-height: clamp(1.5rem, 3.5vw, 1em);
+  text-transform: uppercase;
+}
+
+h4,
+.lg {
+  font-size: clamp(1.5rem, 3.5vw, var(--size-md));
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: clamp(var(--size-md), 3vw, 2.5rem);
+}
+
+/* MINI SIZES*/
+
+h5,
+h6,
+.md {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: clamp(var(--size-md), 2vw, 2.5rem);
+}
+
+/* light version */
+h6,
+.light {
+  font-weight: 400;
+}
+
+p,
+.sm {
+  font-size: clamp(var(--size-sm), 2.5vw, 1.125rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: clamp(1.5rem, 2.5vw, var(--size-md));
+}
+
+.label {
+    color: #FFFFFF;
+  }
+
+  .zoek {
+  font-size: var(--size-sm);
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  letter-spacing: -0.06em;
+  border: 1px solid var(--black);
+  text-transform: uppercase;
+  padding: 0 4px;
+  }
+
+.button {
+    border: var(--border);
+    background-color: var(--white);
+    font-family: var(--font-family-mono);
+    width: fit-content;
+    color: black;
+    padding: .75rem;
+}
