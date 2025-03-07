@@ -71,7 +71,7 @@ body
 --font-weight-body: Regular;
     
 font-family: 'Archivo', sans-serif;
-font-size: 16px;}
+font-size: 16px;
 
 --border: 1px solid black;
 
@@ -88,7 +88,7 @@ h1,
   font-size: 3rem;
     font-weight: 600;
     line-height: 3rem;
-    letter-spacing: -.04em
+    letter-spacing: -.04em;
   text-transform: uppercase;
 }
 
@@ -130,8 +130,5 @@ h6,
 s {
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2rem
-}
-
-
-/*End typography */
+  line-height: 2rem;
+}}

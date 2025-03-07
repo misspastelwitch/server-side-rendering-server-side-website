@@ -13,14 +13,16 @@
 
   <header class="titles">
     <h1>ONZE VACATURES</h1>
-    <p>Verslim je carrière bij de beste digitale bureaus van Nederland.
+    <p>Verslim je carrière bij de beste digitale bureaus van Nederland.<br>
      Pak je rol als developer of designer, researcher, als scrum master of marketeer,
-     als strateeg. Start of groei door – en laat zien wat je kan.</p>
+     als strateeg.<br> Start of groei door – en laat zien wat je kan.</p>
   </header>
 
 
 <form>
-    <input type="text" class="zoek" id="search" name="search" placeholder="Zoek een vacature...">
+    <input type="text" class="zoek" id="search" name="search" placeholder="Zoek een vacature..."
+    >
+    <div "buttons">
     <select class="button">
         <option value="all">Expertise</option>
         <option value="frontend">Frontend Developer</option>
@@ -49,14 +51,16 @@
         <option value="En">Engels</option>
         <option value="Nl">Nederlands</option>
     </select>
+    </div>
 </form>
 
-<main>
+<main class="gridview">
     <ul>
         {% for vacature in vacatures %}
         <li>
-         <h2>{{vacature.title}}</h2>
-            <p><span>{{vacature.photo}}</span><span>{{vacature.agency_id}}</span><span>{{vacature.hours}}</span><span>{{vacature.locatie}}</span></p>
+         <h3>{{vacature.title}}</h3>
+         <a href="{{vacature.photo}}"> </a>
+            <h5><span>{{vacature.hours}}</span> Uur - <span>{{vacature.locatie}}</span></h5>
             <a href="{{vacature.url}}">Bekijken →</a>
         </li>
         {% endfor %}
