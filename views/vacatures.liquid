@@ -2,7 +2,7 @@
 
 <header>
     <nav class="topnav">
-      <img src="//assets/DDAlogo.png" alt="logo" class="logo">
+      <img src="/assets/DDAlogo.png" alt="logo" class="logo">
 
        <div class="home">
         <a href="https://dutchdigitalagencies.com/">Home</a>
@@ -56,7 +56,7 @@
         {% for vacature in vacatures %}
         <li>
          <h2>{{vacature.title}}</h2>
-            <p><span>ENG & NL</span><span>VALSPLAT</span><span>{{vacature.hours}}</span><span>{{vacature.locatie}}</span></p>
+            <p><span>{{vacature.photo}}</span><span>{{vacature.agency_id}}</span><span>{{vacature.hours}}</span><span>{{vacature.locatie}}</span></p>
             <a href="{{vacature.url}}">Bekijken →</a>
         </li>
         {% endfor %}
